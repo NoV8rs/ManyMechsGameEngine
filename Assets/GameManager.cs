@@ -6,13 +6,14 @@ public class GameManager : MonoBehaviour
 {
     public enum GameState { MainMenu, GamePlay, Opitions, Pause, GameWin, GameOver}
     public GameState gameState;
-    UIManager UIManager;
+    private UIManager UIManager;
+    private LoadScene loadScene;
 
-    public void Awake()
-    {
-        Cursor.visible = true;
-        UIManager.MainMenu();
-    }
+   //public void Awake()
+   //{
+   //    Cursor.visible = true;
+   //    UIManager.MainMenu();
+   //}
 
     public void Update()
     {

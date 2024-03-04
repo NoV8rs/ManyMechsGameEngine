@@ -10,7 +10,12 @@ public class UIManager : MonoBehaviour
     public GameObject gamePause;
     public GameObject gameOver;
     public GameObject gameWin;
-    
+
+    public void Awake()
+    {
+        mainMenu = GetComponent<GameObject>();
+        Cursor.visible = true;
+    }
     public void MainMenu()
     {
         Cursor.visible = true;
